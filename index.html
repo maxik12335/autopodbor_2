@@ -285,11 +285,13 @@
     let title = document.querySelector('.mobyle-nav__title')
     let menu = document.querySelector('.mobyle-nav .menu-list')
     let links = document.querySelectorAll('.menu-link')
+    let body = document.querySelector('body')
 
     title.addEventListener('click', () => {
       menu.classList.contains('menu-list-active') ? menu.classList.remove('menu-list-active') : menu.classList.add('menu-list-active')
       menu.classList.contains('menu-list-active') ? title.classList.add('mobyle-nav__title-active') : title.classList.remove('mobyle-nav__title-active')
       menu.classList.contains('menu-list-active') ? menuBlock.classList.add('menu-active') : menuBlock.classList.remove('menu-active')
+      menu.classList.contains('menu-list-active') ? body.classList.add('body-active') : body.classList.remove('body-active')
     })
 
     links.forEach(link => {
@@ -297,6 +299,7 @@
         menu.classList.contains('menu-list-active') ? menu.classList.remove('menu-list-active') : menu.classList.add('menu-list-active')
         menu.classList.contains('menu-list-active') ? title.classList.add('mobyle-nav__title-active') : title.classList.remove('mobyle-nav__title-active')
         menu.classList.contains('menu-list-active') ? menuBlock.classList.add('menu-active') : menuBlock.classList.remove('menu-active')
+        menu.classList.contains('menu-list-active') ? body.classList.add('body-active') : body.classList.remove('body-active')
       })
     })
   </script>

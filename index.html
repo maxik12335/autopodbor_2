@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="libr/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Автоподбор</title>
+</head>
+<body>
+  <header class="header">
+    <div class="shadow"></div>
+    <div class="container">
+      <h1 class="header-title">Автоподбор</h1>
+      <h2 class="header-subtitle">Нижний Новгород</h2>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="section about">
+      <div class="shadow"></div>
+      <div class="container">
+        <div class="about-contents">
+          <p class="about-content">
+            Здравствуйте, меня зовут Сергей, я работаю в сфере aвтoподбора с 2019 года. Занимаюсь диагностикой автомобиля перед покупкой, а так же подбираю авто по критериям заказчика
+          </p>
+          <p class="about-content" style="margin-bottom: 0;">
+            Смогу обеспечить полное сопровождение сделки и дать гарантии юридической чистоты
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section job">
+      <div class="shadow"></div>
+      <div class="container">
+        <h2 class="job-title">
+          Автомобиль проверяю по следующим пунктам
+        </h2>
+
+        <ul class="job-list">
+          <li class="job-list__item">
+            Диагностика кузова ( окрасы , корозия , оригинальность деталей , какие детали скручивались )
+          </li>
+          <li class="job-list__item">
+            Компьютерная диагностика ( мотор , коробка , мозги )
+          </li>
+          <li class="job-list__item">
+            Безопасность, Тест Драйв ( состояние подвески, коробка, динамика )
+          </li>
+          <li class="job-list__item">
+            Юридическая чистота ( залоги, запреты, обременения, дтп )
+          </li>
+          <li class="job-list__item">
+            Проверка документов ( подлинность, собственник ли продаёт )
+          </li>
+          <li class="job-list__item">
+            Состояние салона ( трещины, царапины, потертости )
+          </li>
+          <li class="job-list__item">
+            Общая оценка и заключение !
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section price">
+      <div class="container">
+        <ul class="price-list">
+          <li class="price-list__item">
+            Выездная диагностика
+            <span>от 2000</span>
+          </li>
+          <li class="price-list__item">
+            Подбор под ключ
+            <span>от 20000</span>
+          </li>
+          <li class="price-list__item">
+            Автоэксперт на день
+            <span>от 8000</span>
+          </li>
+        </ul>
+
+        <p class="price-description">
+          В любое время вы можете получить бесплатную консультацию эксперта
+          <a href="https://www.avito.ru/nizhniy_novgorod/predlozheniya_uslug/pomosch_v_podbore_avto_3335417121" target="_blank">
+            <img class="price-description__img" src="images/avito.svg" alt="avito">
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section feedback">
+      <h2 class="feedback-title">
+        Все отзывы реальные и взяты с Avito
+      </h2>
+      <div class="shadow"></div>
+      <div class="container">
+        <div id="feedbackCarusel" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <p class="feedback-comment">
+                Сергей отлично выполнил свою работу, на протяжении всего подбора был на связи и отвечал на все интересующие меня вопросы. Авто нашел в кротчайшие сроки. Советую.
+              </p>
+              <p class="feedback-name">
+                Даниил
+              </p>
+              <p class="feedback-date">
+                14 апреля
+              </p>
+            </div>
+            <div class="carousel-item">
+              <p class="feedback-comment">
+                Сергей отлично выполнил свою работу, на протяжении всего подбора был на связи и отвечал на все интересующие меня вопросы. Авто нашел в кротчайшие сроки. Советую.
+              </p>
+              <p class="feedback-name">
+                Корпорация улыбок 
+              </p>
+              <p class="feedback-date">
+                30 марта
+              </p>
+            </div>
+            <div class="carousel-item">
+              <p class="feedback-comment">
+                Хотела бы выразить Сергею благодарность за его профессиональный подход к работе. Все быстро, четко и по делу. Рекомендую его как специалиста!
+              </p>
+              <p class="feedback-name">
+                Марина Бабарыкина
+              </p>
+              <p class="feedback-date">
+                26 марта
+              </p>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#feedbackCarusel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#feedbackCarusel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="libr/bootstrap.min.js"></script>
+  <script src="libr/bootstrap.bundle.min.js"></script>
+  <script src="libr/jquery-3.7.1.min.js"></script>
+  <script src="libr/jquery.touchSwipe.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".feedbackCarusel").swipe( {
+        swipeLeft: function() {
+          $(this).carousel("next");
+        },
+        swipeRight: function() {
+          $(this).carousel("prev");
+        },
+        allowPageScroll: "vertical"
+      });
+    });
+    </script>
+</body>
+</html>

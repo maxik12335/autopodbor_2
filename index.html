@@ -9,11 +9,76 @@
   <title>Автоподбор</title>
 </head>
 <body>
+  <section class="menu">
+    <div class="container">
+      <ul class="menu-list">
+        <li class="menu-list__item">
+          <a href="#job" class="menu-link">
+            как работаю
+          </a>
+        </li>
+
+        <li class="menu-list__item">
+          <a href="#price" class="menu-link">
+            стоимость
+          </a>
+        </li>
+
+        <li class="menu-list__item">
+          <a href="#feedback" class="menu-link">
+            отзывы
+          </a>
+        </li>
+
+        <li class="menu-list__item">
+          <a href="#contacts" class="menu-link">
+            контакты
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mobyle-nav">
+      <h2 class="mobyle-nav__title">
+        навигация
+      </h2>
+      <ul class="menu-list">
+        <li class="menu-list__item">
+          <a href="#job" class="menu-link">
+            как работаю
+          </a>
+        </li>
+
+        <li class="menu-list__item">
+          <a href="#price" class="menu-link">
+            стоимость
+          </a>
+        </li>
+
+        <li class="menu-list__item">
+          <a href="#feedback" class="menu-link">
+            отзывы
+          </a>
+        </li>
+
+        <li class="menu-list__item">
+          <a href="#contacts" class="menu-link">
+            контакты
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
   <header class="header">
     <div class="shadow"></div>
     <div class="container">
       <h1 class="header-title">Автоподбор</h1>
       <h2 class="header-subtitle">Нижний Новгород</h2>
+      <a class="header-tel" href="tel:+79302870271">
+        +7 (930) 287 02 71
+        <span class="header-tel__line"></span>
+      </a>
     </div>
   </header>
 
@@ -32,7 +97,7 @@
       </div>
     </section>
 
-    <section class="section job">
+    <section class="section job" id="job">
       <div class="shadow"></div>
       <div class="container">
         <h2 class="job-title">
@@ -65,7 +130,7 @@
       </div>
     </section>
 
-    <section class="section price">
+    <section class="section price" id="price">
       <div class="container">
         <ul class="price-list">
           <li class="price-list__item">
@@ -91,7 +156,7 @@
       </div>
     </section>
 
-    <section class="section feedback">
+    <section class="section feedback" id="feedback">
       <h2 class="feedback-title">
         Все отзывы реальные и взяты с Avito
       </h2>
@@ -178,7 +243,7 @@
       </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="contacts">
       <div class="container">
         <h2 class="footer-title">
           связаться со мной можно удобным для тебя способом
@@ -192,28 +257,48 @@
           </li>
 
           <li class="footer-list__item">
-            <a href="https://vk.com/maximkuznetsov2015" class="footer-link" target="_blank">
-              <img class="footer-img" src="images/vk.svg" alt="">
-            </a>
-          </li>
-
-          <li class="footer-list__item">
-            <a href="https://t.me/maxikit" class="footer-link" target="_blank">
+            <a href="https://t.me/serega7924" class="footer-link" target="_blank">
               <img class="footer-img" src="images/tg.svg" alt="">
             </a>
           </li>            
 
           <li class="footer-list__item">
-            <a href="https://wa.me/79991383946" class="footer-link" target="_blank">
+            <a href="https://wa.me/79302870271" class="footer-link" target="_blank">
               <img class="footer-img" src="images/watsapp.svg" alt="">
             </a>
           </li>
         </ul>
+
+        <a href="tel:+79302870271" class="footer-tel">
+          +7 (930) 287 02 71
+          <span class="footer-tel__line"></span>
+        </a>
       </div>
     </footer>
   </main>
 
   <script src="libr/bootstrap.min.js"></script>
   <script src="libr/bootstrap.bundle.min.js"></script>
+
+  <script>
+    let menuBlock = document.querySelector('.menu')
+    let title = document.querySelector('.mobyle-nav__title')
+    let menu = document.querySelector('.mobyle-nav .menu-list')
+    let links = document.querySelectorAll('.menu-link')
+
+    title.addEventListener('click', () => {
+      menu.classList.contains('menu-list-active') ? menu.classList.remove('menu-list-active') : menu.classList.add('menu-list-active')
+      menu.classList.contains('menu-list-active') ? title.classList.add('mobyle-nav__title-active') : title.classList.remove('mobyle-nav__title-active')
+      menu.classList.contains('menu-list-active') ? menuBlock.classList.add('menu-active') : menuBlock.classList.remove('menu-active')
+    })
+
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.contains('menu-list-active') ? menu.classList.remove('menu-list-active') : menu.classList.add('menu-list-active')
+        menu.classList.contains('menu-list-active') ? title.classList.add('mobyle-nav__title-active') : title.classList.remove('mobyle-nav__title-active')
+        menu.classList.contains('menu-list-active') ? menuBlock.classList.add('menu-active') : menuBlock.classList.remove('menu-active')
+      })
+    })
+  </script>
 </body>
 </html>
